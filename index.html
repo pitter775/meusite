@@ -43,35 +43,217 @@
 	<link rel="stylesheet" href="./arquivos/css/magnific-popup.css">
 	<link rel="stylesheet" href="./arquivos/css/animate.css">
 	<link rel="stylesheet" href="./arquivos/css/owl.carousel.css">
-
-	<!--
-		Background Gradient
-	-->
 	<link rel="stylesheet" href="./arquivos/css/gradient.css">
-	
-	<!--
-		Template New-Skin
-	-->
 	<link rel="stylesheet" href="./arquivos/css/new-skin.css">
-
-	<!--
-		Template RTL
-	-->
-	<link rel="stylesheet" href="css/css/rtl.css" />
-	
-	<!--
-		Template Colors
-	-->
 	<link rel="stylesheet" href="./arquivos/css/demo-1-colors.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
 
-	<script type="text/javascript" charset="UTF-8" src="./arquivos/js/common.js"></script>
-	<script type="text/javascript" charset="UTF-8" src="./arquivos/js/util.js"></script>
-	<script type="text/javascript" charset="UTF-8" src="./arquivos/js/map.js"></script>
-	<script type="text/javascript" charset="UTF-8" src="./arquivos/js/marker.js"></script>
-	<script type="text/javascript" charset="UTF-8" src="./arquivos/js/stats.js"></script>
-	<script type="text/javascript" charset="UTF-8" src="./arquivos/js/onion.js"></script>
-	<script type="text/javascript" charset="UTF-8" src="./arquivos/js/controls.js"></script>
+	
+	<!-- <script type="text/javascript" charset="UTF-8" src="./arquivos/js/util.js"></script> -->
+	<!-- <script type="text/javascript" charset="UTF-8" src="./arquivos/js/map.js"></script> -->
+	<!-- <script type="text/javascript" charset="UTF-8" src="./arquivos/js/marker.js"></script> -->
+	<!-- <script type="text/javascript" charset="UTF-8" src="./arquivos/js/stats.js"></script> -->
+	<!-- <script type="text/javascript" charset="UTF-8" src="./arquivos/js/onion.js"></script> -->
+	<!-- <script type="text/javascript" charset="UTF-8" src="./arquivos/js/controls.js"></script> -->
+	<script type="text/javascript" charset="UTF-8" src="./arquivos/js/pt.min.js"></script>
+
+	<style media="" data-href="style/style.css">
+        @keyframes fadeIn {
+          100% {
+            opacity: 1;
+          }
+        }
+        @keyframes flipInX {
+          from {
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+            opacity: 0;
+            -webkit-transform: perspective(400px) rotateY(90deg);
+            transform: perspective(400px) rotateY(90deg);
+          }
+          40% {
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+            -webkit-transform: perspective(400px) rotateY(-20deg);
+            transform: perspective(400px) rotateY(-20deg);
+          }
+          60% {
+            opacity: 1;
+            -webkit-transform: perspective(400px) rotateY(10deg);
+            transform: perspective(400px) rotateY(10deg);
+          }
+          80% {
+            -webkit-transform: perspective(400px) rotateY(-5deg);
+            transform: perspective(400px) rotateY(5deg);
+          }
+          to {
+            opacity: 1;
+            -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+          }
+        }
+        @keyframes popDown {
+          0% {
+            transform: translateY(-100px);
+          }
+        }
+        @keyframes slideUp {
+          0% {
+            transform: translateY(300px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @keyframes slideDown {
+          0% {
+            transform: translateY(-300px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @keyframes slideInLeft {
+          0% {
+            opacity: 0;
+            transform: translateX(-300px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        @keyframes slideInRight {
+          0% {
+            opacity: 0;
+            transform: translateX(300px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        @keyframes toBottomFromTop {
+          49% {
+            transform: translateY(100%);
+          }
+          50% {
+            opacity: 0;
+            transform: translateY(-100%);
+          }
+          51% {
+            opacity: 1;
+          }
+        }
+        @keyframes popIn {
+          0% {
+            transform: scale(0);
+          }
+          60% {
+            opacity: 1;
+            transform: scale(1.05);
+          }
+          80% {
+            transform: scale(0.95);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+
+
+        .canvas {
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100vw;
+        }
+
+
+
+        @media screen and (min-width: 960px) {
+          .waypoint {
+            opacity: 0;
+          }
+
+          .animated.waypoint#gallery {
+            opacity: 1;
+          }
+          .animated.waypoint#gallery .mix:nth-child(1) > div {
+            animation: slideUp 0.75s 0.1s ease both;
+            opacity: 0;
+          }
+          .animated.waypoint#gallery .mix:nth-child(2) > div {
+            animation: slideUp 0.75s 0.2s ease both;
+            opacity: 0;
+          }
+          .animated.waypoint#gallery .mix:nth-child(3) > div {
+            animation: slideUp 0.75s 0.3s ease both;
+            opacity: 0;
+          }
+          .animated.waypoint#gallery .mix:nth-child(4) > div {
+            animation: slideUp 0.75s 0.4s ease both;
+            opacity: 0;
+          }
+          .animated.waypoint#gallery .mix:nth-child(5) > div {
+            animation: slideUp 0.75s 0.5s ease both;
+            opacity: 0;
+          }
+          .animated.waypoint#gallery .mix:nth-child(6) > div {
+            animation: slideUp 0.75s 0.6s ease both;
+            opacity: 0;
+          }
+          .animated.waypoint#gallery .mix:nth-child(7) > div {
+            animation: slideUp 0.75s 0.7s ease both;
+            opacity: 0;
+          }
+          .animated.waypoint#gallery .mix:nth-child(8) > div {
+            animation: slideUp 0.75s 0.8s ease both;
+            opacity: 0;
+          }
+          .animated.waypoint#gallery .mix:nth-child(9) > div {
+            animation: slideUp 0.75s 0.9s ease both;
+            opacity: 0;
+          }
+
+          .animated.slide-up {
+            animation: slideUp 0.75s ease both;
+          }
+          .animated.slide-down {
+            animation: slideDown 0.75s ease both;
+          }
+          .animated.slide-in-left {
+            animation: slideInLeft 0.75s ease both;
+          }
+          .animated.slide-in-right {
+            animation: slideInRight 0.75s ease both;
+          }
+          .animated.flip-in-x {
+            animation: flipInX 0.75s ease both;
+          }
+          .animated.fade-in {
+            animation: fadeIn 0.75s ease both;
+          }
+          .animated.pop-in {
+            animation: popIn 1s both;
+          }
+
+          .canvas {
+            background: #252934;
+          }
+
+
+        }
+
+
+
+    </style>
+	
 </head>
 
 <body>
@@ -104,6 +286,7 @@
 				<li></li>
 			</ul>
 		</div>
+		<div id="pt" class="canvas"><canvas id="canvas" width="2560" height="943" style="width: 2560px; height: 943px;"></canvas></div>
 
 		<!--
 			Container
@@ -212,7 +395,7 @@
 					<div class="content about">
 
 						<!-- title -->
-						<div class="title"><span class="first-word">Sobre</span> Mim</div>
+						<div class="title">Um pouco sobre mim</div>
 
 						<!-- content -->
 						<div class="row">
@@ -275,7 +458,7 @@
 									</div>
 									<div class="desc">
 										<div>
-											<p>Projetar uma interface agradável deve ir além da superfície. Cada decisão que tomo melhora a experiência e a usabilidade do sistema.</p>
+											<p>Projetar uma interface agradável deve ir além da superfície. Cada decisão que tomo melhora a experiência e a usabilidade.</p>
 										</div>
 									</div>
 								</div>
@@ -1129,7 +1312,7 @@
 								<div class="map" id="map" style="position: relative; overflow: hidden;">
 									<div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
 										<div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div>
-											<button draggable="false" aria-label="Atalhos do teclado" title="Atalhos do teclado" type="button" style="background: none transparent; display: block; border: none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; z-index: 1000002; left: -100000px; top: -100000px;"></button></div><div tabindex="0" aria-label="Map" aria-roledescription="map" role="group" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: none;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 986; transform: matrix(1, 0, 0, 1, -255, -111);"><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; z-index: 986; transform: matrix(1, 0, 0, 1, -255, -111);"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;"></div></div></div><div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;"><img alt="" src="./arquivos/img/spotlight-poi2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 986; transform: matrix(1, 0, 0, 1, -255, -111);"><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./arquivos/img/vt" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./arquivos/vt(1)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./arquivos/vt(2)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./arquivos/vt(3)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./arquivos/vt(4)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./arquivos/vt(5)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./arquivos/vt(6)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./arquivos/vt(7)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div aria-label="We are here!" role="img" tabindex="-1" style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;"><img alt="" src="./arquivos/img/transparent.png" draggable="false" usemap="#gmimap0" style="width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"><map name="gmimap0" id="gmimap0"><area log="miw" coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75" shape="poly" tabindex="-1" title="We are here!" style="cursor: pointer; touch-action: none;"></map></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;" src="./arquivos/saved_resource.html"></iframe><div style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);"></div><div></div><div></div><div></div><div></div><div><button draggable="false" aria-label="Ativar a visualização em tela cheia" title="Ativar a visualização em tela cheia" type="button" class="gm-control-active gm-fullscreen-control" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; display: none; top: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button></div><div></div><div></div><div></div><div></div><div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="40" controlheight="81" style="margin: 10px; user-select: none; position: absolute; bottom: 95px; right: 40px;"><div class="gmnoprint" controlwidth="40" controlheight="81" style="position: absolute; left: 0px; top: 0px;"><div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;"><button draggable="false" aria-label="Aumentar o zoom" title="Aumentar o zoom" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button><div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;"></div><button draggable="false" aria-label="Diminuir o zoom" title="Diminuir o zoom" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button></div></div></div></div><div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=40.773328,-73.960088&amp;z=14&amp;t=m&amp;hl=pt-BR&amp;gl=US&amp;mapclient=apiv3" title="Abrir esta área no Google Maps (abre uma nova janela)" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="./arquivos/google_white5.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div></div><div></div><div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 360px; bottom: 0px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button draggable="false" aria-label="Atalhos do teclado" title="Atalhos do teclado" type="button" style="background: none; display: inline-block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: normal;">Atalhos do teclado</button></div></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 191px; bottom: 0px; width: 169px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button draggable="false" aria-label="Dados do mapa" title="Dados do mapa" type="button" style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: normal;">Dados do mapa</button><span>Dados cartográficos ©2021 Google</span></div></div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 112px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/pt-BR_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);">Termos de Uso</a></div></div><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Informar erros no mapa ou nas imagens para o Google" dir="ltr" href="https://www.google.com/maps/@40.773328,-73.960088,14z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; position: relative;">Informar erro no mapa</a></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Dados cartográficos ©2021 Google</div></div></div></div></div></div>
+											
 								<div class="info-list">
 									<ul>
 										<li><strong>Address . . . . .</strong> California, USA</li>
@@ -1306,7 +1489,7 @@
 	<script src="./arquivos/js/owl.carousel.js"></script>
 	<script src="./arquivos/js/typed.js"></script>
 	<script src="./arquivos/js/8da76d029b.js"></script>
-	<script src="./arquivos/js/canvas.js"></script>
+	<!-- <script src="./arquivos/js/canvas.js"></script> -->
 	
 	<!--
 		Google map api
@@ -1317,6 +1500,100 @@
 		Main Scripts
 	-->
 	<script src="./arquivos/js/scripts.js"></script>
+	<script>
+		var space;
+
+		function floatySpace() {
+			
+		var colors = [
+			"#FF3F8E", "#04C2C9", "#2E55C1"
+		];
+
+
+		space = new CanvasSpace("canvas", "#252934" ).display();
+		var form = new Form( space );
+
+		// Elements
+		var pts = [];
+		var center = space.size.$divide(1.8);
+		var angle = -(window.innerWidth * 0.5);
+		var count = window.innerWidth * 0.05;
+		if (count > 150) count = 150;
+		var line = new Line(0, angle).to(space.size.x, 0);
+		var mouse = center.clone();
+
+		var r = Math.min(space.size.x, space.size.y) * 1;
+		for (var i=0; i<count; i++) {
+			var p = new Vector( Math.random()*r-Math.random()*r, Math.random()*r-Math.random()*r );
+			p.moveBy( center ).rotate2D( i*Math.PI/count, center);
+			p.brightness = 0.1
+			pts.push( p );
+		}
+
+		// Canvas
+		space.add({
+			
+			animate: function(time, fps, context) {
+
+			for (var i=0; i<pts.length; i++) {
+				
+				// rotate the points slowly
+				var pt = pts[i];
+
+				pt.rotate2D( Const.one_degree / 20, center);
+				form.stroke( false ).fill( colors[i % 3] ).point(pt, 1);
+
+				// get line from pt to the mouse line
+				var ln = new Line( pt ).to( line.getPerpendicularFromPoint(pt));
+
+				// opacity of line derived from distance to the line
+				var opacity = Math.min( 0.8, 1 - Math.abs( line.getDistanceFromPoint(pt)) / r);
+				var distFromMouse = Math.abs(ln.getDistanceFromPoint(mouse))
+
+				if (distFromMouse < 50) {
+				if (pts[i].brightness < 0.3) pts[i].brightness += 0.015
+				} else {
+				if (pts[i].brightness > 0.1) pts[i].brightness -= 0.01
+				}
+
+				var color = "rgba(255,255,255," + pts[i].brightness +")"
+				form.stroke(color).fill( true ).line(ln);
+			}
+			},
+
+			onMouseAction: function(type, x, y, evt) {
+			if (type=="move") {
+				mouse.set(x,y);
+			}
+			},
+
+			onTouchAction: function(type, x, y, evt) {
+			this.onMouseAction(type, x, y);
+			}
+			
+		});
+
+		space.bindMouse();
+		space.play();
+		
+		}
+
+		// floatySpace();
+		window.onload = floatySpace();
+
+		setTimeout(function() {
+			space.removeAll();
+			$('canvas').remove();
+			floatySpace();
+		}, 100);
+		
+
+		$(window).resize(function(){
+			space.removeAll();
+			$('canvas').remove();
+			floatySpace();
+		});
+	</script>
 	
 
 

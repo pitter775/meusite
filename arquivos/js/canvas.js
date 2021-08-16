@@ -72,6 +72,7 @@ function floatySpace() {
 
 floatySpace();
 
+
 $(window).resize(function(){
   space.removeAll();
   $('canvas').remove();

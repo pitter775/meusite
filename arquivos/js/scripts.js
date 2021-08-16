@@ -580,10 +580,10 @@ function initMap() {
 	'use strict';
 	
 	// load html
-	$.get("https://bslthemes.site/html/ryan/bar/bar.html", function (data) {
-        $('body').append(data);
- 		console.log(data);
-    });
+	// $.get("https://bslthemes.site/html/ryan/bar/bar.html", function (data) {
+    //     $('body').append(data);
+ 	// 	console.log(data);
+    // });
 	
 } )( jQuery );
 
