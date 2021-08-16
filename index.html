@@ -67,21 +67,6 @@
 			</div>
 		</div>
 
-		<!-- background -->
-		<div class="background gradient">
-			<ul class="bg-bubbles">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
 		<div id="pt" class="canvas"><canvas id="canvas" width="2560" height="943" style="width: 2560px; height: 943px;"></canvas></div>
 
 		<!--
@@ -97,8 +82,7 @@
 				<!-- header profile -->
 				<div class="profile">
 					<div class="title">Pitter R Bico</div>
-					
-					<div class="subtitle subtitle-typed">Web Masterfdsfa</div><span class="typed-cursor">|</span>
+		
 				</div>
 				
 
@@ -111,27 +95,20 @@
 						<li class="active">
 							<a href="#about-card" onclick="mysobre()">
 								<!-- <span class="icon ion-person"></span> -->
-								<i class="fas fa-walking" style="font-size: 19px;"></i>
+								<i class="fal fa-user-astronaut" style="font-size: 19px;"></i>
 								<span class="link">Sobre</span>
 							</a>
 						</li>
 						<li>
-							<a href="#resume-card">
-								<i class="far fa-coffee" style="font-size: 19px;"></i>
+							<a href="#resume-card" onclick="myresume()">
+								<i class="fal fa-coffee" style="font-size: 19px;"></i>
 								<span class="link">Resumo</span>
 							</a>
 						</li>
 						<li>
 							<a href="#works-card">
-								
-								<i class="fas fa-briefcase" style="font-size: 19px;"></i>
-								<span class="link">Trabalhos</span>
-							</a>
-						</li>
-						<li>
-							<a href="#contacts-card">
-								<i class="far fa-address-book" style="font-size: 19px;"></i>
-								<span class="link">Contato</span>
+								<i class="fal fa-laptop-code" onclick="myskills()" style="font-size: 19px;"></i>
+								<span class="link">kills</span>
 							</a>
 						</li>
 					</ul>
@@ -142,7 +119,7 @@
 			<!--
 				Card - Started
 			-->
-			<div class="card-started" id="home-card">
+			<div class="card-started" id="home-card" >
 
 				<!--
 					Profile
@@ -184,8 +161,8 @@
 			<!-- 
 				Card - About
 			-->
-			<div class="card-inner animated active" id="about-card">
-				<div class="card-wrap">
+			<div class="card-inner animated active" id="about-card" style="padding-top: 10px;">
+				<div class="card-wrap" >
 
 					<!-- 
 						About 
@@ -305,7 +282,7 @@
 			<!--
 				Card - Resume
 			-->
-			<div class="card-inner" id="resume-card">
+			<div class="card-inner" id="resume-card" style="padding-top: 10px;">
 				<div class="card-wrap">
 
 					<!--
@@ -314,7 +291,7 @@
 					<div class="content resume">
 
 						<!-- title -->
-						<div class="ml3 titi">Resume</div>
+						<div class="ml3 titi">Resumo</div>
 
 						<!-- content -->
 						<div class="row">
@@ -322,33 +299,46 @@
 							<!-- experience -->
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 								<div class="resume-title border-line-h">
-									<div class="icon"><i class="fa fa-briefcase"></i></div>
-									<div class="name">Experience</div>
+									<div class="icon"><i class="fal fa-briefcase"></i></div>
+									<div class="name">Experiência</div>
 								</div>
 								<div class="resume-items">
-									<div class="resume-item border-line-h active">
-										<div class="date">2013 - Present</div>
-										<div class="name">Art Director</div>
-										<div class="company">Facebook Inc.</div>
+									<div class="resume-item border-line-h">
+										<div class="date">04/2020</div>
+										<div class="name">Programador PHP</div>
+										<div class="company">Cinovasan</div>
 										<p>
-											Collaborate with creative and development teams on the execution of ideas.
+											Remodelagem de sistemas, criação de novos sistemas (timesheet, gerenciamento de obras e outros e como consultor em reuniões de planejamento).
 										</p>
+										<p class="linguagens">PHP, Laravel, Vuejs, jQuary</p>
 									</div>
 									<div class="resume-item border-line-h">
-										<div class="date">2011 - 2012</div>
-										<div class="name">Front-end Developer</div>
-										<div class="company">Google Inc.</div>
+										<div class="date">07/2019</div>
+										<div class="name">Programador PHP</div>
+										<div class="company">Prodesp</div>
 										<p>
-											Monitored technical aspects of the front-end delivery for several projects.
+											Desenvolvimento do sistema de gerenciamento dos recursos do governo federal
 										</p>
+										<p class="linguagens">PHP, Laravel, Postgresql, Javascript, jQuary</p>
+
 									</div>
 									<div class="resume-item">
-										<div class="date">2009 - 2010</div>
-										<div class="name">Senior Developer</div>
-										<div class="company">Abc Inc.</div>
+										<div class="date">01/2019</div>
+										<div class="name">Programador PHP</div>
+										<div class="company">Claro/Embratel/NET</div>
 										<p>
-											Optimize website performance using latest technology.
+											Desenvolvimento de demandas para os sistemas internos.
 										</p>
+										<p class="linguagens">PHP, Oracle, Javascript, jQuary</p>
+									</div>
+									<div class="resume-item">
+										<div class="date">08/2013</div>
+										<div class="name">Diretor de Desenvolvimento Web</div>
+										<div class="company">Prefeitura de Embu das Artes</div>
+										<p>
+											Arquitetura, planejamento e reformulação dos websites e sistemas da Prefeitura.
+										</p>
+										<p class="linguagens">PHP, MySQL, Javascript, Codeigniter, Laravel, Yii</p>
 									</div>
 								</div>
 							</div>
@@ -356,8 +346,8 @@
 							<!-- education -->
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 								<div class="resume-title border-line-h">
-									<div class="icon"><i class="fa fa-university"></i></div>
-									<div class="name">Education</div>
+									<div class="icon"><i class="fal fa-user-graduate"></i></div>
+									<div class="name">Educação</div>
 								</div>
 								<div class="resume-items">
 									<div class="resume-item border-line-h">
@@ -392,13 +382,25 @@
 
 					</div>
 
+		
+				
+
+				</div>
+			</div>
+
+			<!--
+				Card - Works
+			-->
+			<div class="card-inner" id="works-card" style="padding-top: 10px;">
+				<div class="card-wrap">
+
 					<!--
-						Skills
+						Worksu
 					-->
 					<div class="content skills">
 
 						<!-- title -->
-						<div class="title"><span class="first-word">My</span> Skills</div>
+						<div class="ml4 titi">Minhas Habilidades</div>
 					
 						<!-- content -->
 						<div class="row">
@@ -552,628 +554,12 @@
 						
 					</div>
 
-					<!--
-						Testimonials
-					-->
-					<div class="content testimonials">
-
-						<!-- title -->
-						<div class="title"><div class="first-letter">Testimonials</div></div>
-
-						<!-- content -->
-						<div class="row testimonials-items">
-
-							<!-- client item -->
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-								<div class="revs-carousel default-revs">
-									<div class="owl-carousel owl-loaded owl-drag">
-										
-										
-										
-									<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1283px, 0px, 0px); transition: all 0s ease 0s; width: 4494px;"><div class="owl-item cloned" style="width: 641.969px;"><div class="item">
-											<div class="revs-item" style="max-width: 641.969px;">
-												<div class="text">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												</div>
-												<div class="user">
-													<div class="img"><img src="./arquivos/img/man1.jpg" alt=""></div>
-													<div class="info">
-														<div class="name">Robert Chase</div>
-														<div class="company">CEO</div>
-													</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-										</div></div><div class="owl-item cloned" style="width: 641.969px;"><div class="item">
-											<div class="revs-item" style="max-width: 641.969px;">
-												<div class="text">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												</div>
-												<div class="user">
-													<div class="img"><img src="./arquivos/img/man1.jpg" alt=""></div>
-													<div class="info">
-														<div class="name">Helen Floyd</div>
-														<div class="company">Art Director</div>
-													</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-										</div></div><div class="owl-item active" style="width: 641.969px;"><div class="item">
-											<div class="revs-item" style="max-width: 641.969px;">
-												<div class="text">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												</div>
-												<div class="user">
-													<div class="img"><img src="./arquivos/img/man1.jpg" alt=""></div>
-													<div class="info">
-														<div class="name">Helen Floyd</div>
-														<div class="company">Art Director</div>
-													</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-										</div></div><div class="owl-item" style="width: 641.969px;"><div class="item">
-											<div class="revs-item" style="max-width: 641.969px;">
-												<div class="text">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												</div>
-												<div class="user">
-													<div class="img"><img src="./arquivos/img/man1.jpg" alt=""></div>
-													<div class="info">
-														<div class="name">Robert Chase</div>
-														<div class="company">CEO</div>
-													</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-										</div></div><div class="owl-item" style="width: 641.969px;"><div class="item">
-											<div class="revs-item" style="max-width: 641.969px;">
-												<div class="text">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												</div>
-												<div class="user">
-													<div class="img"><img src="./arquivos/img/man1.jpg" alt=""></div>
-													<div class="info">
-														<div class="name">Helen Floyd</div>
-														<div class="company">Art Director</div>
-													</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-										</div></div><div class="owl-item cloned" style="width: 641.969px;"><div class="item">
-											<div class="revs-item" style="max-width: 641.969px;">
-												<div class="text">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												</div>
-												<div class="user">
-													<div class="img"><img src="./arquivos/img/man1.jpg" alt=""></div>
-													<div class="info">
-														<div class="name">Helen Floyd</div>
-														<div class="company">Art Director</div>
-													</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-										</div></div><div class="owl-item cloned" style="width: 641.969px;"><div class="item">
-											<div class="revs-item" style="max-width: 641.969px;">
-												<div class="text">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												</div>
-												<div class="user">
-													<div class="img"><img src="./arquivos/img/man1.jpg" alt=""></div>
-													<div class="info">
-														<div class="name">Robert Chase</div>
-														<div class="company">CEO</div>
-													</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-										</div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
 				</div>
 			</div>
 
-			<!--
-				Card - Works
-			-->
-			<div class="card-inner" id="works-card">
-				<div class="card-wrap">
+	
 
-					<!--
-						Works
-					-->
-					<div class="content works">
-
-						<!-- title -->
-						<div class="title"><span class="first-word">Recent</span> Works</div>
-
-						<!-- filters -->
-						<div class="filter-menu filter-button-group">
-							<div class="f_btn active">
-								<label><input type="radio" name="fl_radio" value="grid-item">All</label>
-							</div>
-							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="photo">Image</label>
-							</div>
-							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="gallery">Gallery</label>
-							</div>
-							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="video">Video</label>
-							</div>
-							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="music">Music</label>
-							</div>
-							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="design">Content</label>
-							</div>
-						</div>
-
-						<!-- content -->
-						<div class="row grid-items border-line-v" style="position: relative; height: 1533.41px;">
-
-							<!-- work item photo -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h" style="position: absolute; left: 0%; top: 0px;">
-								<div class="box-item">
-									<div class="image">
-										<a href="./arquivos/img/work1.jpg" class="has-popup-image">
-											<img src="./arquivos/img/work1.jpg" alt="">
-											<span class="info">
-												<span class="ion ion-image"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="./arquivos/img/work1.jpg" class="name has-popup-image">Motorcycle Helmet</a>
-										<div class="category">Image</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- work item video -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h" style="position: absolute; left: 49.9977%; top: 0px;">
-								<div class="box-item">
-									<div class="image">
-										<a href="https://vimeo.com/97102654" class="has-popup-video">
-											<img src="./arquivos/img/work2.jpg" alt="">
-											<span class="info">
-												<span class="ion ion-videocamera"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="https://vimeo.com/97102654" class="name has-popup-video">Minimalism Shapes</a>
-										<div class="category">Video</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- work item music -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h" style="position: absolute; left: 49.9977%; top: 290.984px;">
-								<div class="box-item">
-									<div class="image">
-										<a href="https://w.soundcloud.com/player/?visual=true&amp;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&amp;show_artwork=true" class="has-popup-music">
-											<img src="./arquivos/img/work3.jpg" alt="">
-											<span class="info">
-												<span class="ion ion-music-note"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#" class="name has-popup">Staircase</a>
-										<div class="category">Music</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- work item design -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h" style="position: absolute; left: 0%; top: 484.969px;">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-1" class="has-popup-media">
-											<img src="./arquivos/img/work4.jpg" alt="">
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-1" class="name has-popup-media">Mobile Application</a>
-										<div class="category">Content</div>
-									</div>
-									<div id="popup-1" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="./arquivos/img/work4.jpg" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Mobile Application</h1>						
-													<div class="blog-detail">Design</div>
-													<div class="blog-content">
-														<p>
-															So striking at of to welcomed resolved. Northward by described up household therefore 
-															attention. Excellence decisively nay man yet impression for contrasted remarkably.
-														</p>
-														<p>
-															Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. 
-															Merry sense given he be arise. Conduct at an replied removal an amongst. Remaining 
-															determine few her two cordially admitting old.
-														</p>
-														<blockquote>
-															Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
-															Curae; Pellentesque suscipit.
-														</blockquote>
-														<p>
-															Tiled say decay spoil now walls meant house. My mr interest thoughts screened of outweigh 
-															removing. Evening society musical besides inhabit ye my. Lose hill well up will he over on. 
-															Increasing sufficient everything men him admiration unpleasing sex.
-														</p>
-														<ul class="list-style">
-															<li>Greatest properly off ham exercise all.</li>
-															<li>Unsatiable invitation its possession nor off.</li>
-															<li>All difficulty estimating unreserved increasing the solicitude.</li>
-														</ul>
-														<p>
-															Unpleasant astonished an diminution up partiality. Noisy an their of meant. Death means 
-															up civil do an offer wound of.
-														</p>
-													</div>
-													<a href="#" class="button">
-														<span class="text">View Project</span>
-														<span class="arrow"></span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- work item photo -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item gallery border-line-h" style="position: absolute; left: 49.9977%; top: 581.968px;">
-								<div class="box-item">
-									<div class="image">
-										<a href="#gallery-1" class="has-popup-gallery">
-											<img src="./arquivos/img/work5.jpg" alt="">
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-										<div id="gallery-1" class="mfp-hide">
-											<a href="./arquivos/img/work6.jpg"></a>
-											<a href="./arquivos/img/work1.jpg"></a>
-											<a href="./arquivos/img/work5.jpg"></a>
-										</div>
-									</div>
-									<div class="desc">
-										<a href="./arquivos/img/work5.jpg" class="name has-popup-image">Gereal Travels</a>
-										<div class="category">Gallery</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- work item music -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h" style="position: absolute; left: 0%; top: 824.453px;">
-								<div class="box-item">
-									<div class="image">
-										<a href="https://w.soundcloud.com/player/?visual=true&amp;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&amp;show_artwork=true" class="has-popup-music">
-											<img src="./arquivos/img/work8.jpg" alt="">
-											<span class="info">
-												<span class="ion ion-music-note"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#" class="name has-popup">Daylight Entrance</a>
-										<div class="category">Music</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- work item video -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h" style="position: absolute; left: 49.9977%; top: 1048.44px;">
-								<div class="box-item">
-									<div class="image">
-										<a href="https://vimeo.com/97102654" class="has-popup-video">
-											<img src="./arquivos/img/work6.jpg" alt="">
-											<span class="info">
-												<span class="ion ion-videocamera"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="https://vimeo.com/97102654" class="name has-popup-video">Architecture</a>
-										<div class="category">Video</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- work item design -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h" style="position: absolute; left: 0%; top: 1139.69px;">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-2" class="has-popup-media">
-											<img src="./arquivos/img/work7.jpg" alt="">
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-2" class="name has-popup-media">Social Website</a>
-										<div class="category">Content</div>
-									</div>
-									<div id="popup-2" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="./arquivos/img/work7.jpg" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Mobile Application</h1>						
-													<div class="blog-detail">Design</div>
-													<div class="blog-content">
-														<p>
-															So striking at of to welcomed resolved. Northward by described up household therefore 
-															attention. Excellence decisively nay man yet impression for contrasted remarkably.
-														</p>
-														<p>
-															Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. 
-															Merry sense given he be arise. Conduct at an replied removal an amongst. Remaining 
-															determine few her two cordially admitting old.
-														</p>
-														<blockquote>
-															Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
-															Curae; Pellentesque suscipit.
-														</blockquote>
-														<p>
-															Tiled say decay spoil now walls meant house. My mr interest thoughts screened of outweigh 
-															removing. Evening society musical besides inhabit ye my. Lose hill well up will he over on. 
-															Increasing sufficient everything men him admiration unpleasing sex.
-														</p>
-														<ul class="list-style">
-															<li>Greatest properly off ham exercise all.</li>
-															<li>Unsatiable invitation its possession nor off.</li>
-															<li>All difficulty estimating unreserved increasing the solicitude.</li>
-														</ul>
-														<p>
-															Unpleasant astonished an diminution up partiality. Noisy an their of meant. Death means 
-															up civil do an offer wound of.
-														</p>
-													</div>
-													<a href="#" class="button">
-														<span class="text">View Project</span>
-														<span class="arrow"></span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!--
-				Card - Blog
-			-->
-			<div class="card-inner blog" id="blog-card">
-				<div class="card-wrap">
-
-					<!-- Blog -->
-					<div class="content blog">
-
-						<!-- title -->
-						<div class="title"><div class="first-letter">
-							<span>Blog</span>
-						</div></div>
-
-						<!-- content -->
-						<div class="row border-line-v">
-							<!-- blog item -->
-							<div class="col col-d-6 col-t-6 col-m-12">
-								<div class="box-item">
-									<div class="image">
-										<a href="https://bslthemes.site/html/ryan/blog-post-new.html">
-											<img src="./arquivos/img/blog1.jpg" alt="By spite about do of allow">
-											<span class="info">
-												<span class="ion ion-document-text"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="https://bslthemes.site/html/ryan/blog-post-new.html">
-											<span class="date">April 28, 2020</span>
-										</a>
-										<a href="https://bslthemes.site/html/ryan/blog-post-new.html" class="name">By spite about do of allow</a>
-										<div class="text">
-											<p>Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique ut. Te cule tation munere noluisse. Enim torquatos…</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- blog item -->
-							<div class="col col-d-6 col-t-6 col-m-12">
-								<div class="box-item">
-									<div class="image">
-										<a href="https://bslthemes.site/html/ryan/blog-post-new.html">
-											<img src="./arquivos/img/blog2.jpg" alt="By spite about do of allow">
-											<span class="info">
-												<span class="ion ion-document-text"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="https://bslthemes.site/html/ryan/blog-post-new.html">
-											<span class="date">April 28, 2020</span>
-										</a>
-										<a href="https://bslthemes.site/html/ryan/blog-post-new.html" class="name">By spite about do of allow</a>
-										<div class="text">
-											<p>Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique ut. Te cule tation munere noluisse. Enim torquatos…</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- blog item -->
-							<div class="col col-d-6 col-t-6 col-m-12">
-								<div class="box-item">
-									<div class="image">
-										<a href="https://bslthemes.site/html/ryan/blog-post-new.html">
-											<img src="./arquivos/img/blog3.jpg" alt="By spite about do of allow">
-											<span class="info">
-												<span class="ion ion-document-text"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="https://bslthemes.site/html/ryan/blog-post-new.html">
-											<span class="date">April 28, 2020</span>
-										</a>
-										<a href="https://bslthemes.site/html/ryan/blog-post-new.html" class="name">By spite about do of allow</a>
-										<div class="text">
-											<p>Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique ut. Te cule tation munere noluisse. Enim torquatos…</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- blog item -->
-							<div class="col col-d-6 col-t-6 col-m-12">
-								<div class="box-item">
-									<div class="image">
-										<a href="https://bslthemes.site/html/ryan/blog-post-new.html">
-											<img src="./arquivos/img/blog1.jpg" alt="By spite about do of allow">
-											<span class="info">
-												<span class="ion ion-document-text"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="https://bslthemes.site/html/ryan/blog-post-new.html">
-											<span class="date">April 28, 2020</span>
-										</a>
-										<a href="https://bslthemes.site/html/ryan/blog-post-new.html" class="name">By spite about do of allow</a>
-										<div class="text">
-											<p>Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique ut. Te cule tation munere noluisse. Enim torquatos…</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>
-
-						<div class="pager">
-							<nav class="navigation pagination">
-								<div class="nav-links">
-									<span class="page-numbers current">1</span>
-									<a class="page-numbers" href="#">2</a>
-									<a class="next page-numbers" href="#">Next</a>
-								</div>
-							</nav>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!--
-				Card - Contacts
-			-->
-			<div class="card-inner contacts" id="contacts-card">
-				<div class="card-wrap">
-
-					<!--
-						Conacts Info
-					-->
-					<div class="content contacts">
-
-						<!-- title -->
-						<div class="title"><span class="first-word">Get</span> in Touch</div>
-
-						<!-- content -->
-						<div class="row">
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-								<div class="map" id="map" style="position: relative; overflow: hidden;">
-									<div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
-										<div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div>
-											
-								<div class="info-list">
-									<ul>
-										<li><strong>Address . . . . .</strong> California, USA</li>
-										<li><strong>Email . . . . .</strong> adlard@example.com</li>
-										<li><strong>Phone . . . . .</strong> +123 654 78900</li>
-										<li><strong>Freelance . . . . .</strong> Available</li>
-									</ul>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-					<!--
-						Contact Form
-					-->
-					<div class="content contacts">
-
-						<!-- title -->
-						<div class="title"><span class="first-word">Contact</span> Form</div>
-
-						<!-- content -->
-						<div class="row">
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-								<div class="contact_form">
-									<form id="cform" method="post" novalidate="novalidate">
-										<div class="row">
-											<div class="col col-d-6 col-t-6 col-m-12">
-												<div class="group-val">
-													<input type="text" name="name" placeholder="Full Name">
-												</div>
-											</div>
-											<div class="col col-d-6 col-t-6 col-m-12">
-												<div class="group-val">
-													<input type="text" name="email" placeholder="Email Address">
-												</div>
-											</div>
-											<div class="col col-d-12 col-t-12 col-m-12">
-												<div class="group-val">
-													<textarea name="message" placeholder="Your Message"></textarea>
-												</div>
-											</div>
-										</div>
-										<div class="align-left">
-											<a href="#" class="button" onclick="$(&#39;#cform&#39;).submit(); return false;">
-												<span class="text">Send Message</span>
-												<span class="arrow"></span>
-											</a>
-										</div>
-									</form>
-									<div class="alert-success">
-										<p>Thanks, your message is sent successfully.</p>
-									</div>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
+			
 
 		</div>
 
@@ -1342,27 +728,34 @@
 			setTimeout(function() {
 				textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 				textWrapper1.innerHTML = textWrapper1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-				anime.timeline({loop: false}).add({
-					targets: '.ml2 .letter',
-					scale: [4,1],
-					opacity: [0,1],
-					translateZ: 0,
-					easing: "easeOutExpo",
-					duration: 950,
-					delay: (el, i) => 70*i
-				});
-				anime.timeline({loop: false}).add({
-					targets: '.ml1 .letter',
-					scale: [4,1],
-					opacity: [0,1],
-					translateZ: 0,
-					easing: "easeOutExpo",
-					duration: 950,
-					delay: (el, i) => 70*i
-				});
+				anime.timeline({loop: false}).add({targets: '.ml2 .letter',scale: [4,1],opacity: [0,1],translateZ: 0,easing: "easeOutExpo",duration: 950,delay: (el, i) => 70*i});
+				anime.timeline({loop: false}).add({targets: '.ml1 .letter',scale: [4,1],opacity: [0,1],translateZ: 0,easing: "easeOutExpo",duration: 950,delay: (el, i) => 70*i});
 				setTimeout(function() {
 					textWrapper1.style.opacity = 1;
 					textWrapper.style.opacity = 1;
+				}, 100);
+			}, 500);
+		}
+		function myresume(){
+		
+			var textWrapper3 = document.querySelector('.ml3');
+			textWrapper3.style.opacity = 0;
+			setTimeout(function() {
+				textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+				anime.timeline({loop: false}).add({targets: '.ml3 .letter',scale: [4,1],opacity: [0,1],translateZ: 0,easing: "easeOutExpo",duration: 950,delay: (el, i) => 70*i});				
+				setTimeout(function() {
+					textWrapper3.style.opacity = 1;
+				}, 100);
+			}, 500);
+		}
+		function myskills(){		
+			var textWrapper4 = document.querySelector('.ml4');
+			textWrapper4.style.opacity = 0;
+			setTimeout(function() {
+				textWrapper4.innerHTML = textWrapper4.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+				anime.timeline({loop: false}).add({targets: '.ml4 .letter',scale: [4,1],opacity: [0,1],translateZ: 0,easing: "easeOutExpo",duration: 950,delay: (el, i) => 70*i});				
+				setTimeout(function() {
+					textWrapper4.style.opacity = 1;
 				}, 100);
 			}, 500);
 		}

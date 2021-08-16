@@ -75,14 +75,24 @@ function floatySpace() {
 window.onload = floatySpace();
 
 setTimeout(function() {
+  var width = $(document).width();
   space.removeAll();
   $('canvas').remove();
-  floatySpace();
+  if(width > 900){
+    floatySpace();
+  }
+ 
 }, 100);
 
 
 $(window).resize(function(){
+  // console.log($(this).width())
+  var largura = $(this).width(); 
   space.removeAll();
   $('canvas').remove();
-  floatySpace();
+  
+  if(largura > 900){
+    floatySpace();
+  }
+
 });

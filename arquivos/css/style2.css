@@ -3,11 +3,13 @@
     color: #323232;   
     font-weight: 600;
   }
+  .linguagens{ font-size: 12px; font-style: italic;}
 
   
   .ml2 .letter {display: inline-block;}
   .ml1 .letter {display: inline-block;}
   .ml3 .letter {display: inline-block;}
+  .ml4 .letter {display: inline-block;}
 
 
 
@@ -16,7 +18,7 @@
 
 
 .fas {
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
     font-size: 3rem;
    /*  background-color: green; conditional */
     margin: 0px;

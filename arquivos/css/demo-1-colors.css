@@ -11,7 +11,7 @@
 	*/
 
 	body {
-		background-color: #50a3a2;
+		background-color: #252934;
 	}
 
 	.background.gradient {
@@ -172,14 +172,14 @@
 	.content-sidebar .profile .social a:hover .fab, 
 	.content-sidebar .profile .social a:hover .fas, 
 	.content-sidebar .profile .social a:hover .fa {
-		color: #252934;
+		color: rgb(124, 228, 38);
 	}
 
 	.content .title .first-word,
 	.content .title:first-letter,
 	.content-sidebar h2.widget-title .first-word,
 	.content-sidebar h2.widget-title:first-letter {
-		color: #252934!important;
+		color: rgb(124, 228, 38);
 	}
 
 	.card-started .profile .image:before,

@@ -47,7 +47,7 @@
 	display: block;
 	height: 72px;
 	text-align: center;
-	background: #ffffff;
+	/* background: #ffffff; */
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
 	z-index: 2;
@@ -66,7 +66,7 @@
 	display: block;
 	width: 26px;
 	height: 2px;
-	background: #323232;
+	background: #490808;
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
@@ -80,7 +80,7 @@
 	top: -7px;
 	width: 80%;
 	height: 100%;
-	background: #323232;
+	background: #a52a2a;
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
@@ -94,7 +94,7 @@
 }
 
 .header .menu-btn:hover span, .header .menu-btn:hover span:before, .header .menu-btn:hover span:after {
-	background: #252934;
+	background: rgb(48, 70, 190);
 }
 
 .header .menu-btn:hover span:before {
@@ -116,6 +116,7 @@
 	-moz-transition: color 0.3s ease 0s;
 	-webkit-transition: color 0.3s ease 0s;
 	-o-transition: color 0.3s ease 0s;
+
 }
 
 .header .top-menu ul li:first-child a {
@@ -142,13 +143,13 @@
 	overflow: hidden;
 	display: block;
 	height: 72px;
-	color: #171717;
+	/* color: #fff; */
 	text-align: center;
-	background: #ffffff;
+	/* background: #ffffff; */
 }
 
 .header .top-menu ul li a:before {
-	content: '';
+	/* content: '';
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -156,7 +157,7 @@
 	height: 1px;
 	background: -moz-radial-gradient(right, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
 	background: -webkit-radial-gradient(right, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
-	background: radial-gradient(ellipse at right, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+	background: radial-gradient(ellipse at right, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%); */
 }
 
 .header .top-menu ul li a .icon {
@@ -167,7 +168,7 @@
 	width: 40px;
 	height: 40px;
 	font-size: 20px;
-	color: #171717;
+	color: rgb(19, 156, 60);
 	line-height: 40px;
 	border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -196,20 +197,20 @@
 
 .header .top-menu ul li:hover a,
 .header .top-menu ul li.active a {
-	color: #252934;
+	color: #214fcf;
 }
 
 .header .top-menu ul li:hover a .icon,
 .header .top-menu ul li.active a .icon,
 .header .top-menu ul li:hover a .link,
 .header .top-menu ul li.active a .link {
-	color: #252934;
+	color: #0847f3;
 }
 
 .header .profile {
 	padding: 10px 62px 10px 18px;
 	width: auto;
-	height: 64px;
+	/* height: 64px; */
 	text-align: left;
 	display: none;
 }
