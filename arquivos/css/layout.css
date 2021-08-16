@@ -780,7 +780,9 @@
 	-moz-border-radius: 60px;
 	-webkit-border-radius: 60px;
 	-khtml-border-radius: 60px;
+
 }
+.service-items .service-item .icon span { padding-top: 14px }
 
 .service-items .service-item .icon .ion, .service-items .service-item .icon .fab, .service-items .service-item .icon .fas {
 	display: block;
