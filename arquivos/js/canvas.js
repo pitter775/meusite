@@ -70,7 +70,15 @@ function floatySpace() {
   space.play();
 }
 
-floatySpace();
+
+
+window.onload = floatySpace();
+
+setTimeout(function() {
+  space.removeAll();
+  $('canvas').remove();
+  floatySpace();
+}, 100);
 
 
 $(window).resize(function(){

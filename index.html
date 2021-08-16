@@ -4,14 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<style>
-		.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}
-		.gm-control-active>img:nth-child(1){display:block}
-		.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1){display:none}
-		.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3){display:block}
-		.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
-		.gm-style .gm-style-cc a,.gm-style .gm-style-cc button,.gm-style .gm-style-cc span,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
-		@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
-		.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}
+
 	</style>
 	<link type="text/css" rel="stylesheet" href="./arquivos/css/css.css">
 	<link type="text/css" rel="stylesheet" href="./arquivos/css/css(1).css">
@@ -47,212 +40,15 @@
 	<link rel="stylesheet" href="./arquivos/css/new-skin.css">
 	<link rel="stylesheet" href="./arquivos/css/demo-1-colors.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+	<link rel="stylesheet" href="./arquivos/css/style.css">
+	<link rel="stylesheet" href="./arquivos/css/texcolor.css">
 
-	
-	<!-- <script type="text/javascript" charset="UTF-8" src="./arquivos/js/util.js"></script> -->
-	<!-- <script type="text/javascript" charset="UTF-8" src="./arquivos/js/map.js"></script> -->
-	<!-- <script type="text/javascript" charset="UTF-8" src="./arquivos/js/marker.js"></script> -->
-	<!-- <script type="text/javascript" charset="UTF-8" src="./arquivos/js/stats.js"></script> -->
-	<!-- <script type="text/javascript" charset="UTF-8" src="./arquivos/js/onion.js"></script> -->
-	<!-- <script type="text/javascript" charset="UTF-8" src="./arquivos/js/controls.js"></script> -->
+	<link rel="stylesheet" href="./arquivos/css/style2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 	<script type="text/javascript" charset="UTF-8" src="./arquivos/js/pt.min.js"></script>
 
-	<style media="" data-href="style/style.css">
-        @keyframes fadeIn {
-          100% {
-            opacity: 1;
-          }
-        }
-        @keyframes flipInX {
-          from {
-            -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-            opacity: 0;
-            -webkit-transform: perspective(400px) rotateY(90deg);
-            transform: perspective(400px) rotateY(90deg);
-          }
-          40% {
-            -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-            -webkit-transform: perspective(400px) rotateY(-20deg);
-            transform: perspective(400px) rotateY(-20deg);
-          }
-          60% {
-            opacity: 1;
-            -webkit-transform: perspective(400px) rotateY(10deg);
-            transform: perspective(400px) rotateY(10deg);
-          }
-          80% {
-            -webkit-transform: perspective(400px) rotateY(-5deg);
-            transform: perspective(400px) rotateY(5deg);
-          }
-          to {
-            opacity: 1;
-            -webkit-transform: perspective(400px);
-            transform: perspective(400px);
-          }
-        }
-        @keyframes popDown {
-          0% {
-            transform: translateY(-100px);
-          }
-        }
-        @keyframes slideUp {
-          0% {
-            transform: translateY(300px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        @keyframes slideDown {
-          0% {
-            transform: translateY(-300px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        @keyframes slideInLeft {
-          0% {
-            opacity: 0;
-            transform: translateX(-300px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-        @keyframes slideInRight {
-          0% {
-            opacity: 0;
-            transform: translateX(300px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-        @keyframes toBottomFromTop {
-          49% {
-            transform: translateY(100%);
-          }
-          50% {
-            opacity: 0;
-            transform: translateY(-100%);
-          }
-          51% {
-            opacity: 1;
-          }
-        }
-        @keyframes popIn {
-          0% {
-            transform: scale(0);
-          }
-          60% {
-            opacity: 1;
-            transform: scale(1.05);
-          }
-          80% {
-            transform: scale(0.95);
-          }
-          100% {
-            opacity: 1;
-            transform: scale(1);
-          }
-        }
-
-
-
-        .canvas {
-          height: 100%;
-          left: 0;
-          position: absolute;
-          top: 0;
-          width: 100vw;
-        }
-
-
-
-        @media screen and (min-width: 960px) {
-          .waypoint {
-            opacity: 0;
-          }
-
-          .animated.waypoint#gallery {
-            opacity: 1;
-          }
-          .animated.waypoint#gallery .mix:nth-child(1) > div {
-            animation: slideUp 0.75s 0.1s ease both;
-            opacity: 0;
-          }
-          .animated.waypoint#gallery .mix:nth-child(2) > div {
-            animation: slideUp 0.75s 0.2s ease both;
-            opacity: 0;
-          }
-          .animated.waypoint#gallery .mix:nth-child(3) > div {
-            animation: slideUp 0.75s 0.3s ease both;
-            opacity: 0;
-          }
-          .animated.waypoint#gallery .mix:nth-child(4) > div {
-            animation: slideUp 0.75s 0.4s ease both;
-            opacity: 0;
-          }
-          .animated.waypoint#gallery .mix:nth-child(5) > div {
-            animation: slideUp 0.75s 0.5s ease both;
-            opacity: 0;
-          }
-          .animated.waypoint#gallery .mix:nth-child(6) > div {
-            animation: slideUp 0.75s 0.6s ease both;
-            opacity: 0;
-          }
-          .animated.waypoint#gallery .mix:nth-child(7) > div {
-            animation: slideUp 0.75s 0.7s ease both;
-            opacity: 0;
-          }
-          .animated.waypoint#gallery .mix:nth-child(8) > div {
-            animation: slideUp 0.75s 0.8s ease both;
-            opacity: 0;
-          }
-          .animated.waypoint#gallery .mix:nth-child(9) > div {
-            animation: slideUp 0.75s 0.9s ease both;
-            opacity: 0;
-          }
-
-          .animated.slide-up {
-            animation: slideUp 0.75s ease both;
-          }
-          .animated.slide-down {
-            animation: slideDown 0.75s ease both;
-          }
-          .animated.slide-in-left {
-            animation: slideInLeft 0.75s ease both;
-          }
-          .animated.slide-in-right {
-            animation: slideInRight 0.75s ease both;
-          }
-          .animated.flip-in-x {
-            animation: flipInX 0.75s ease both;
-          }
-          .animated.fade-in {
-            animation: fadeIn 0.75s ease both;
-          }
-          .animated.pop-in {
-            animation: popIn 1s both;
-          }
-
-          .canvas {
-            background: #252934;
-          }
-
-
-        }
-
-
-
-    </style>
+	
 	
 </head>
 
@@ -301,8 +97,10 @@
 				<!-- header profile -->
 				<div class="profile">
 					<div class="title">Pitter R Bico</div>
-					<div class="subtitle subtitle-typed">Web Master</div><span class="typed-cursor">|</span>
+					
+					<div class="subtitle subtitle-typed">Web Masterfdsfa</div><span class="typed-cursor">|</span>
 				</div>
+				
 
 				<!-- menu btn -->
 				<!-- <a href="#" class="menu-btn"><span></span></a> -->
@@ -311,7 +109,7 @@
 				<div class="top-menu">
 					<ul>
 						<li class="active">
-							<a href="#about-card">
+							<a href="#about-card" onclick="mysobre()">
 								<!-- <span class="icon ion-person"></span> -->
 								<i class="fas fa-walking" style="font-size: 19px;"></i>
 								<span class="link">Sobre</span>
@@ -357,7 +155,7 @@
 					<!-- profile titles -->
 					<div class="title">Pitter R Bico</div>
 					<!--<div class="subtitle">Web Designer</div>-->
-					<div class="subtitle subtitle-typed">Web Master</div><span class="typed-cursor">|</span>
+					<h1 style="font-size: 16px;" class="subtitle subtitle-typed"> <span class="txt-type" data-wait="2500" data-words='["Pitter?", "Designer?", "Programador?"]'></span> <i style="font-size: 12px;" class="fas fa-pencil-alt animarfas"></i></h1>
 
 					<!-- profile socials -->
 					<div class="social">
@@ -367,7 +165,7 @@
 						<a target="_blank" href="https://www.spotify.com/"><span class="fa fa-spotify"></span></a>
 						<a target="_blank" href="https://stackoverflow.com/"><span class="fa fa-stack-overflow"></span></a>
 					</div>
-					<div class="subtitle subtitle-typed" style="margin-top: 20px;">pitter775@gmail.com</div><span class="typed-cursor">|</span>
+					
 					
 					<!-- profile buttons -->
 					<div class="lnks">
@@ -395,7 +193,7 @@
 					<div class="content about">
 
 						<!-- title -->
-						<div class="title">Um pouco sobre mim</div>
+						<div class="ml1 titi">Um pouco sobre mim</div>
 
 						<!-- content -->
 						<div class="row">
@@ -427,10 +225,26 @@
 					<div class="content services">
 
 						<!-- title -->
-						<div class="title"><span class="first-word">Meus</span> Conhecimentos</div>
+						<div class="ml2 titi">Meus Conhecimentos</div>
 
 						<!-- content -->
 						<div class="row service-items border-line-v">
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon">
+										<span class="fal fa-code"></span>
+									</div>
+									<div class="name">
+										<span>Codificação</span>
+									</div>
+									<div class="desc">
+										<div>
+											<p>Alta flexibilidade, base de código sólida faço a combinação perfeita do designer com toneladas de recursos poderosos.</p>
+										</div>
+									</div>
+								</div>
+							</div>
 							<!-- service item -->
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
 								<div class="service-item">
@@ -479,23 +293,7 @@
 									</div>
 								</div>
 							</div>
-							<!-- service item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-								<div class="service-item">
-									<div class="icon">
-										<span class="fa fa-gamepad"></span>
-									</div>
-									<div class="name">
-										<span>
-										Game Development								</span>
-									</div>
-									<div class="desc">
-										<div>
-											<p>Developing memorable and unique mobile android, ios and video games.</p>
-										</div>
-									</div>
-								</div>
-							</div>
+							
 						</div>
 						<div class="clear"></div>
 
@@ -516,7 +314,7 @@
 					<div class="content resume">
 
 						<!-- title -->
-						<div class="title"><div class="first-letter">Resume</div></div>
+						<div class="ml3 titi">Resume</div>
 
 						<!-- content -->
 						<div class="row">
@@ -1489,7 +1287,9 @@
 	<script src="./arquivos/js/owl.carousel.js"></script>
 	<script src="./arquivos/js/typed.js"></script>
 	<script src="./arquivos/js/8da76d029b.js"></script>
-	<!-- <script src="./arquivos/js/canvas.js"></script> -->
+	<script src="./arquivos/js/canvas.js"></script>
+	<script src="./arquivos/js/typingScript.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	
 	<!--
 		Google map api
@@ -1500,100 +1300,78 @@
 		Main Scripts
 	-->
 	<script src="./arquivos/js/scripts.js"></script>
+
 	<script>
-		var space;
-
-		function floatySpace() {
-			
-		var colors = [
-			"#FF3F8E", "#04C2C9", "#2E55C1"
-		];
-
-
-		space = new CanvasSpace("canvas", "#252934" ).display();
-		var form = new Form( space );
-
-		// Elements
-		var pts = [];
-		var center = space.size.$divide(1.8);
-		var angle = -(window.innerWidth * 0.5);
-		var count = window.innerWidth * 0.05;
-		if (count > 150) count = 150;
-		var line = new Line(0, angle).to(space.size.x, 0);
-		var mouse = center.clone();
-
-		var r = Math.min(space.size.x, space.size.y) * 1;
-		for (var i=0; i<count; i++) {
-			var p = new Vector( Math.random()*r-Math.random()*r, Math.random()*r-Math.random()*r );
-			p.moveBy( center ).rotate2D( i*Math.PI/count, center);
-			p.brightness = 0.1
-			pts.push( p );
-		}
-
-		// Canvas
-		space.add({
-			
-			animate: function(time, fps, context) {
-
-			for (var i=0; i<pts.length; i++) {
-				
-				// rotate the points slowly
-				var pt = pts[i];
-
-				pt.rotate2D( Const.one_degree / 20, center);
-				form.stroke( false ).fill( colors[i % 3] ).point(pt, 1);
-
-				// get line from pt to the mouse line
-				var ln = new Line( pt ).to( line.getPerpendicularFromPoint(pt));
-
-				// opacity of line derived from distance to the line
-				var opacity = Math.min( 0.8, 1 - Math.abs( line.getDistanceFromPoint(pt)) / r);
-				var distFromMouse = Math.abs(ln.getDistanceFromPoint(mouse))
-
-				if (distFromMouse < 50) {
-				if (pts[i].brightness < 0.3) pts[i].brightness += 0.015
-				} else {
-				if (pts[i].brightness > 0.1) pts[i].brightness -= 0.01
-				}
-
-				var color = "rgba(255,255,255," + pts[i].brightness +")"
-				form.stroke(color).fill( true ).line(ln);
-			}
-			},
-
-			onMouseAction: function(type, x, y, evt) {
-			if (type=="move") {
-				mouse.set(x,y);
-			}
-			},
-
-			onTouchAction: function(type, x, y, evt) {
-			this.onMouseAction(type, x, y);
-			}
-			
+		$('.txt').html(function(i, html) {
+			var chars = $.trim(html).split("");
+			return '<span>' + chars.join('</span><span>') + '</span>';
 		});
 
-		space.bindMouse();
-		space.play();
+		var textWrapper = document.querySelector('.ml2');
+		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		anime.timeline({loop: false}).add({
+			targets: '.ml2 .letter',
+			scale: [4,1],
+			opacity: [0,1],
+			translateZ: 0,
+			easing: "easeOutExpo",
+			duration: 950,
+			delay: (el, i) => 70*i
+		});
+
+		var textWrapper1 = document.querySelector('.ml1');
+		textWrapper1.innerHTML = textWrapper1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		anime.timeline({loop: false}).add({
+			targets: '.ml1 .letter',
+			scale: [4,1],
+			opacity: [0,1],
+			translateZ: 0,
+			easing: "easeOutExpo",
+			duration: 950,
+			delay: (el, i) => 70*i
+		});
+
 		
+
+		function mysobre(){
+			var textWrapper = document.querySelector('.ml2');
+			var textWrapper1 = document.querySelector('.ml1');
+			textWrapper1.style.opacity = 0;
+			textWrapper.style.opacity = 0;
+
+			setTimeout(function() {
+				textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+				textWrapper1.innerHTML = textWrapper1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+				anime.timeline({loop: false}).add({
+					targets: '.ml2 .letter',
+					scale: [4,1],
+					opacity: [0,1],
+					translateZ: 0,
+					easing: "easeOutExpo",
+					duration: 950,
+					delay: (el, i) => 70*i
+				});
+				anime.timeline({loop: false}).add({
+					targets: '.ml1 .letter',
+					scale: [4,1],
+					opacity: [0,1],
+					translateZ: 0,
+					easing: "easeOutExpo",
+					duration: 950,
+					delay: (el, i) => 70*i
+				});
+				setTimeout(function() {
+					textWrapper1.style.opacity = 1;
+					textWrapper.style.opacity = 1;
+				}, 100);
+			}, 500);
 		}
 
-		// floatySpace();
-		window.onload = floatySpace();
 
-		setTimeout(function() {
-			space.removeAll();
-			$('canvas').remove();
-			floatySpace();
-		}, 100);
-		
 
-		$(window).resize(function(){
-			space.removeAll();
-			$('canvas').remove();
-			floatySpace();
-		});
+
 	</script>
+	
 	
 
 
