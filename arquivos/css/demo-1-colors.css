@@ -84,7 +84,7 @@
 	.single-post-text ul > li:before,
 	.comment-text ul > li:before,
 	.blog-content ul > li:before {
-		background: #252934;
+		/* background: #252934; */
 	}
 
 	.lnk:hover,
