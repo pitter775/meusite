@@ -376,7 +376,11 @@
 	padding: 210px 50px 50px 50px;
 	position: relative;
 	height: 100%;
-	background: #ffffff;
+	/* background: #ffffff; */
+	
+  /* background-color: rgb(62, 59, 238); */
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 42%, rgba(255,255,255,1) 44%, rgba(33,32,142,0) 62%, rgba(33,32,142,0) 100%);
 	text-align: center;
 	z-index: 10;
 	border-radius: 4px;
