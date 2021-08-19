@@ -873,6 +873,7 @@ input[type="file"] {
 	.card-started .profile {
 		height: calc(100vh - 102px);
 		min-height: 560px;
+		margin-top: -40px;
 	}
 }
 
@@ -2590,7 +2591,7 @@ a.next.page-numbers:hover {
 .profile .main-menu ul li.current_page_parent > a,
 .profile .main-menu ul li.current_page_ancestor > a {
 	text-decoration: none;
-	color: #40548a;
+	color: #252934;
 }
 
 .profile .main-menu ul li.page_item_has_children.current_page_item > a:before, 
