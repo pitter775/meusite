@@ -98,3 +98,8 @@ $(window).resize(function(){
   }
 
 });
+
+console.log("Obrigado por vistisar meu site!")
+console.log("")
+console.log("Fale comigo pelo whatsapp -> 11 9 49506267")
+console.log("Ou pelo email, pitter775@gmail.com")
