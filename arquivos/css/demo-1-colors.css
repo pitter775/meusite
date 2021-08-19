@@ -206,7 +206,7 @@
 
 	.card-started .profile .slide,
 	.content-sidebar .profile .slide {
-		background-color: rgba(120, 204, 109, 0.1);
+		/* background-color: rgba(120, 204, 109, 0.1); */
 	}
 
 	.pricing-items .pricing-item .feature-list ul li strong {
