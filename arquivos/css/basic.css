@@ -31,7 +31,7 @@ body {
 	border: none;
 	font-family: 'Poppins';
 	font-size: 14px;
-	color: #252934bb;
+	color: #40548abb;
 	background: #d8dbe2;
 	letter-spacing: 0em;
 	font-weight: 400;
@@ -564,19 +564,19 @@ strong {
 
 .lnk:hover,
 .button:hover {
-	color: #252934;
+	color: #40548a;
 }
 
 .lnk:hover .ion,
 .button:hover .ion {
-	color: #252934;
+	color: #40548a;
 }
 
 .lnk:hover .arrow:before,
 .button:hover .arrow:before,
 .lnk:hover .arrow:after,
 .button:hover .arrow:after {
-	background: #252934;
+	background: #40548a;
 }
 
 .button {
@@ -594,7 +594,7 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: #252934;
+	color: #40548a;
 }
 
 /* lists */
@@ -692,7 +692,7 @@ input:focus,
 textarea:focus,
 button:focus {
 	color: #171717;
-	border-bottom: 1px solid #252934;
+	border-bottom: 1px solid #40548a;
 }
 
 textarea {
@@ -711,7 +711,7 @@ button {
 }
 
 button:hover {
-	border-bottom: 1px solid #252934;
+	border-bottom: 1px solid #40548a;
 }
 
 label,

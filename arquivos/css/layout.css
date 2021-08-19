@@ -240,7 +240,7 @@
 
 .header .profile .subtitle {
 	font-size: 12px;
-	color: #252934;
+	color: #40548a;
 	line-height: 14px;
 	font-weight: 400;
 	text-overflow: ellipsis;
@@ -340,7 +340,9 @@
 	}
 	.card-started .profile {
 
-		background: #ffffff !important;
+		/* background: #ffffff !important; */
+		background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 43%, rgba(255,255,255,1) 46%, rgba(33,32,142,0.7511379551820728) 47%, rgba(33,32,142,0) 70%);
 	}
 }
 
@@ -490,7 +492,7 @@
 .card-started .profile .subtitle {
 	margin: 0 0 15px 0;
 	font-size: 14px;
-	color: #252934;
+	color: #40548a;
 	line-height: 14px;
 	font-weight: 400;
 }
@@ -511,7 +513,7 @@
 }
 
 .card-started .profile .social a:hover .ion, .card-started .profile .social a:hover .fab, .card-started .profile .social a:hover .fas {
-	color: #252934;
+	color: #40548a;
 }
 
 .card-started .profile .lnk.active.discover .arrow {
@@ -673,7 +675,7 @@
 	padding: 0 0 5px 0;
 	position: relative;
 	font-size: 17px;
-	color: #252934;
+	color: #40548a;
 	line-height: 21px;
 	font-weight: 500;
 }
@@ -707,7 +709,7 @@
 .info-list ul li strong {
 	display: inline-block;
 	font-size: 13px;
-	color: #252934;
+	color: #40548a;
 	font-weight: 500;
 	text-transform: uppercase;
 }
@@ -812,7 +814,7 @@
 	height: 40px;
 	text-align: center;
 	font-size: 32px;
-	color: #252934;
+	color: #40548a;
 }
 
 .pricing-items .pricing-item .icon .ion, .pricing-items .pricing-item .icon .fab, .pricing-items .pricing-item .icon .fas {
@@ -922,7 +924,7 @@
 	height: 60px;
 	text-align: center;
 	font-size: 32px;
-	color: #252934;
+	color: #40548a;
 }
 
 .fuct-items .fuct-item .icon .ion, .fuct-items .fuct-item .icon .fab, .fuct-items .fuct-item .icon .fas {
@@ -971,7 +973,7 @@
 	width: 40px;
 	height: 40px;
 	font-size: 32px;
-	color: #252934;
+	color: #40548a;
 	background: #ffffff;
 }
 
@@ -1006,7 +1008,7 @@
 }
 
 .resume-items .resume-item.active .date {
-	color: #252934;
+	color: #40548a;
 }
 
 .resume-items .resume-item.active .date:before {
@@ -1100,7 +1102,7 @@
 	top: 0;
 	width: 0%;
 	height: 100%;
-	background: #252934;
+	background: #6781cb;
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
@@ -1131,7 +1133,7 @@
 }
 
 .content.works .filter-menu .f_btn.active {
-	color: #252934;
+	color: #40548a;
 }
 
 .content.works .filter-menu .f_btn label {
@@ -1497,7 +1499,7 @@
 	vertical-align: top;
 	width: 10px;
 	height: 10px;
-	border: 1px solid #252934;
+	border: 1px solid #40548a;
 	border-radius: 100%;
 	-webkit-border-radius: 100%;
 }
@@ -1638,7 +1640,7 @@
 	top: 0;
 	display: inline-block;
 	font-family: "Ionicons";
-	color: #252934;
+	color: #40548a;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -1693,7 +1695,7 @@
 }
 
 .skills-list.dotted ul li .progress .da span {
-	background: #252934;
+	background: #6781cb;
 }
 
 .skills-list.circles .progress.p51 .slice, 
@@ -1804,7 +1806,7 @@
 	width: 0.82em;
 	height: 0.82em;
 	clip: rect(0em, 0.5em, 1em, 0em);
-	border: 0.09em solid #252934;
+	border: 0.09em solid #40548a;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	-webkit-transform: rotate(0deg);
@@ -2855,7 +2857,7 @@
 .content-sidebar .main-menu ul li.current_page_parent > a,
 .content-sidebar .main-menu ul li.current_page_ancestor > a {
 	text-decoration: none;
-	color: #252934;
+	color: #40548a;
 }
 
 .content-sidebar .main-menu ul li.page_item_has_children.current_page_item > a:before, 
@@ -2954,7 +2956,7 @@
 }
 
 .content-sidebar .widget ul li a:hover {
-	color: #252934;
+	color: #40548a;
 }
 
 .content-sidebar .widget ul li li {
@@ -3095,12 +3097,12 @@
 }
 
 .content-sidebar h2.widget-title .first-word {
-	color: #252934;
+	color: #40548a;
 }
 
 .content-sidebar h2.widget-title::first-letter,
 .content-sidebar h2.widget-title .first-letter::first-letter {
-	color: #252934;
+	color: #40548a;
 }
 
 .content-sidebar h2.widget-title:before {
@@ -3158,8 +3160,8 @@
 	padding: 0 5px;
 	font-weight: 400;
 	font-size: 13px;
-	color: #252934;
-	border: 1px solid #252934;
+	color: #40548a;
+	border: 1px solid #40548a;
 }
 
 .content-sidebar .screen-reader-text {
