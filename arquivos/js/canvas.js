@@ -69,13 +69,15 @@ function floatySpace() {
   space.bindMouse();
   space.play();
 }
+var width = $(document).width();
 
-
-
-window.onload = floatySpace();
+if(width > 900){
+  window.onload = floatySpace();
+}
+// window.onload = floatySpace();
 
 setTimeout(function() {
-  var width = $(document).width();
+  
   space.removeAll();
   $('canvas').remove();
   if(width > 900){
