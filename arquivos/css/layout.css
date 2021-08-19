@@ -599,18 +599,21 @@
 	opacity: 1;
 	visibility: visible;
 	z-index: 9;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
 .card-inner.active {
 	opacity: 1;
 	visibility: visible;
 	z-index: 10;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
 .card-inner.hidden {
 	opacity: 0;
 	visibility: hidden;
 	z-index: 9;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
 
