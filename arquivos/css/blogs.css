@@ -19,6 +19,11 @@
 	font-size: 13px;
 	color: #999999;
 }
+.post-box h1{
+	font-family: 'Poppins';
+}
+
+
 
 .post-box .blog-image {
 	margin: 0 0 25px 0;

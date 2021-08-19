@@ -44,7 +44,7 @@
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
 	<link rel="stylesheet" href="./arquivos/css/style.css">
 	<link rel="stylesheet" href="./arquivos/css/texcolor.css">
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 	<link rel="stylesheet" href="./arquivos/css/style2.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -108,9 +108,15 @@
 							</a>
 						</li>
 						<li>
-							<a href="#works-card">
+							<a href="#skill-card">
 								<i class="fal fa-laptop-code" onclick="myskills()" style="font-size: 19px;"></i>
 								<span class="link">kills</span>
+							</a>
+						</li>
+						<li>
+							<a href="#works-card">
+								<i class="fal fa-swords" onclick="myworks()" style="font-size: 19px;"></i>
+								<span class="link">Projetos</span>
 							</a>
 						</li>
 					</ul>
@@ -398,9 +404,9 @@
 			</div>
 
 			<!--
-				Card - Works
+				Card - Skills
 			-->
-			<div class="card-inner" id="works-card" style="padding-top: 10px;">
+			<div class="card-inner" id="skill-card" style="padding-top: 10px;">
 				<div class="card-wrap">
 
 					<!--
@@ -537,6 +543,222 @@
 				</div>
 			</div>
 
+			<!--
+				Card - Works
+			-->
+			<div class="card-inner" id="works-card">
+				<div class="card-wrap">
+
+					<!--
+						Works
+					-->
+					<div class="content works">
+
+						<!-- title -->
+						
+						<div class="ml5 titi verde">Trabalhos Recentes</div>
+
+						<!-- filters -->
+						<div class="filter-menu filter-button-group">
+							<div class="f_btn active">
+								<label><input type="radio" name="fl_radio" value="grid-item">Todos</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="sistemas">Sistemas</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="sites">Sites</label>
+							</div>
+							<!-- <div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="music">Music</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="design">Content</label>
+							</div> -->
+						</div>
+
+						<!-- content -->
+						<div class="row grid-items border-line-v" style="position: relative; height: 1533.41px;">
+
+						
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item sites border-line-h" style="">
+								<div class="box-item">
+									<div class="image">
+										<a href="#popup-1" class="has-popup-media">
+											<div class="splide" id="splide1">
+												<div class="splide__track">
+													<ul class="splide__list">
+														<li class="splide__slide icopeq"><img src="./arquivos/img/site1-0.jpg" alt=""></li>
+														<li class="splide__slide icopeq"><img src="./arquivos/img/site1-1.jpg" alt=""></li>
+													</ul>
+												</div>
+											</div>
+											<span class="info">
+												<span class="fab fa-sistrix"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#popup-1" class="name has-popup-media">Laravel, API</a>
+										<div class="category"><a href="http://www.xb3solucoes.com.br/" target="_blank" ><i class="fas fa-link" style="font-size: 13px !important;"></i></a></div>
+										
+									</div>
+									<div id="popup-1" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<div class="splide" id="splide11">
+													<div class="splide__track">
+														<ul class="splide__list">
+															<li class="splide__slide"><img src="./arquivos/img/site1-0.jpg" alt="" style="width: 100%;"></li>
+															<li class="splide__slide"><img src="./arquivos/img/site1-1.jpg" alt="" style="width: 100%;"></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Site responsivo</h1>						
+													<div class="blog-content" style="margin-bottom: 10px;">
+														<p>
+															Criado em Laravel para possivel adição de cadastros<br>
+															Consumo de API, boostrap, jQuary...
+														</p>																												
+													</div>
+													<a href="http://www.xb3solucoes.com.br/" target="_blank" class="button">
+														<span class="text">Visitar</span>
+														<i class="fas fa-link" style="font-size: 13px !important;"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item sistemas sites border-line-h" style="">
+								<div class="box-item">
+									<div class="image">
+										<a href="#popup-2" class="has-popup-media">
+											<div class="splide" id="splide2">
+												<div class="splide__track">
+													<ul class="splide__list">
+														<li class="splide__slide icopeq"><img src="./arquivos/img/site2-0.jpg" alt=""></li>
+														<li class="splide__slide icopeq"><img src="./arquivos/img/site2-1.jpg" alt=""></li>
+														<li class="splide__slide icopeq"><img src="./arquivos/img/site2-2.jpg" alt=""></li>
+													</ul>
+												</div>
+											</div>
+											<span class="info">
+												<span class="fab fa-sistrix"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#popup-2" class="name has-popup-media">Laravel, Mysql</a>
+										<div class="category"><a href="https://luzdivinaplanofunerario.com.br/" target="_blank" ><i class="fas fa-link" style="font-size: 13px !important;"></i></a></div>
+										
+									</div>
+									<div id="popup-2" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<div class="splide" id="splide22">
+													<div class="splide__track">
+														<ul class="splide__list">
+															<li class="splide__slide"><img src="./arquivos/img/site2-0.jpg" alt="" style="width: 100%;"></li>
+															<li class="splide__slide"><img src="./arquivos/img/site2-1.jpg" alt="" style="width: 100%;"></li>
+															<li class="splide__slide"><img src="./arquivos/img/site2-2.jpg" alt="" style="width: 100%;"></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Site responsivo</h1>						
+													<div class="blog-content" style="margin-bottom: 10px;">
+														<p>
+															Possui um ambite administrativo para cadastrar cliente e vendedores, cada vendedor tem os seus clientes.<br>
+															Laravel, Mysql, boostrap, jQuary...
+														</p>																												
+													</div>
+													<a href="https://luzdivinaplanofunerario.com.br/" target="_blank" class="button">
+														<span class="text">Visitar</span>
+														<i class="fas fa-link" style="font-size: 13px !important;"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item sistemas border-line-h" style="">
+								<div class="box-item">
+									<div class="image">
+										<a href="#popup-3" class="has-popup-media">
+											<div class="splide" id="splide3">
+												<div class="splide__track">
+													<ul class="splide__list">
+														<li class="splide__slide icopeq"><img src="./arquivos/img/site3-0.jpg" alt=""></li>
+														<li class="splide__slide icopeq"><img src="./arquivos/img/site3-1.jpg" alt=""></li>
+														<li class="splide__slide icopeq"><img src="./arquivos/img/site3-2.jpg" alt=""></li>
+													</ul>
+												</div>
+											</div>
+											<span class="info">
+												<span class="fab fa-sistrix"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#popup-3" class="name has-popup-media">Laravel, Mysql</a>
+										<!-- <div class="category"><a href="https://luzdivinaplanofunerario.com.br/" target="_blank" ><i class="fas fa-link" style="font-size: 13px !important;"></i></a></div> -->
+										
+									</div>
+									<div id="popup-3" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<div class="splide" id="splide33">
+													<div class="splide__track">
+														<ul class="splide__list">
+															<li class="splide__slide"><img src="./arquivos/img/site3-0.jpg" alt="" style="width: 100%;"></li>
+															<li class="splide__slide"><img src="./arquivos/img/site3-1.jpg" alt="" style="width: 100%;"></li>
+															<li class="splide__slide"><img src="./arquivos/img/site3-2.jpg" alt="" style="width: 100%;"></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Sistema responsivo</h1>						
+													<div class="blog-content" style="margin-bottom: 10px;">
+														<p>
+															Sistema de gerenciamento de horas, ambiente customizado com criações de modulos.<br>
+															Laravel, Mysql, boostrap, jQuary, filas de email, relatórios...
+														</p>																												
+													</div>
+													<!-- <a href="https://luzdivinaplanofunerario.com.br/" target="_blank" class="button">
+														<span class="text">Visitar</span>
+														<i class="fas fa-link" style="font-size: 13px !important;"></i>
+													</a> -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							
+
+							
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
 	
 
 			
@@ -644,6 +866,8 @@
 	<!--
 		jQuery Scripts
 	-->
+	<!-- <script src="./arquivos/js/util.js"></script> -->
+	<script src="./arquivos/js/splide.mim.js"></script>
 	<script src="./arquivos/js/jquery.min.js"></script>
 	<script src="./arquivos/js/jquery.validate.js"></script>
 	<script src="./arquivos/js/jquery.magnific-popup.js"></script>
@@ -662,83 +886,14 @@
 		Main Scripts
 	-->
 	<script src="./arquivos/js/scripts.js"></script>
-
+	<script src="./arquivos/js/animatiti.js"></script>
 	<script>
-		$('.txt').html(function(i, html) {
-			var chars = $.trim(html).split("");
-			return '<span>' + chars.join('</span><span>') + '</span>';
-		});
-
-		var textWrapper = document.querySelector('.ml2');
-		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-		anime.timeline({loop: false}).add({
-			targets: '.ml2 .letter',
-			scale: [4,1],
-			opacity: [0,1],
-			translateZ: 0,
-			easing: "easeOutExpo",
-			duration: 950,
-			delay: (el, i) => 70*i
-		});
-
-		var textWrapper1 = document.querySelector('.ml1');
-		textWrapper1.innerHTML = textWrapper1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-		anime.timeline({loop: false}).add({
-			targets: '.ml1 .letter',
-			scale: [4,1],
-			opacity: [0,1],
-			translateZ: 0,
-			easing: "easeOutExpo",
-			duration: 950,
-			delay: (el, i) => 70*i
-		});
-
-		function mysobre(){
-			var textWrapper = document.querySelector('.ml2');
-			var textWrapper1 = document.querySelector('.ml1');
-			textWrapper1.style.opacity = 0;
-			textWrapper.style.opacity = 0;
-
-			setTimeout(function() {
-				textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-				textWrapper1.innerHTML = textWrapper1.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-				anime.timeline({loop: false}).add({targets: '.ml2 .letter',scale: [4,1],opacity: [0,1],translateZ: 0,easing: "easeOutExpo",duration: 950,delay: (el, i) => 70*i});
-				anime.timeline({loop: false}).add({targets: '.ml1 .letter',scale: [4,1],opacity: [0,1],translateZ: 0,easing: "easeOutExpo",duration: 950,delay: (el, i) => 70*i});
-				setTimeout(function() {
-					textWrapper1.style.opacity = 1;
-					textWrapper.style.opacity = 1;
-				}, 100);
-			}, 500);
-		}
-		function myresume(){
-		
-			var textWrapper3 = document.querySelector('.ml3');
-			textWrapper3.style.opacity = 0;
-			setTimeout(function() {
-				textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-				anime.timeline({loop: false}).add({targets: '.ml3 .letter',scale: [4,1],opacity: [0,1],translateZ: 0,easing: "easeOutExpo",duration: 950,delay: (el, i) => 70*i});				
-				setTimeout(function() {
-					textWrapper3.style.opacity = 1;
-				}, 100);
-			}, 500);
-		}
-		function myskills(){		
-			var textWrapper4 = document.querySelector('.ml4');
-			textWrapper4.style.opacity = 0;
-			setTimeout(function() {
-				textWrapper4.innerHTML = textWrapper4.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-				anime.timeline({loop: false}).add({targets: '.ml4 .letter',scale: [4,1],opacity: [0,1],translateZ: 0,easing: "easeOutExpo",duration: 950,delay: (el, i) => 70*i});				
-				setTimeout(function() {
-					textWrapper4.style.opacity = 1;
-				}, 100);
-			}, 500);
-		}
-
-
+		new Splide( '#splide1', {type   : 'loop', autoplay : true, interval: 6000, } ).mount();
+		new Splide( '#splide11', {type   : 'loop', autoplay : true, interval: 6000, } ).mount();
+		new Splide( '#splide2', {type   : 'loop', autoplay : true, interval: 4000, } ).mount();
+		new Splide( '#splide22', {type   : 'loop', autoplay : true, interval: 4000, } ).mount();
+		new Splide( '#splide3', {type   : 'loop', autoplay : true, interval: 5000, } ).mount();
+		new Splide( '#splide33', {type   : 'loop', autoplay : true, interval: 5000, } ).mount();
 	</script>
-	
-	
-
-
 	
 </body></html>

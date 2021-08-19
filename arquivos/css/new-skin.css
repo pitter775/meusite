@@ -29,7 +29,7 @@ h6 {
 	font-size: 30px;
 	color: #323232;
 	line-height: 1.4em;
-	font-weight: 600;
+	font-weight: 300;
 }
 
 .h-title {
@@ -1342,9 +1342,9 @@ input[type="file"] {
 	-webkit-transform: scale(1);
 }
 
-.box-item:hover .image a img {
-	transform: scale(1.05);
-	-webkit-transform: scale(1.05);
+.icopeq:hover {
+	transform: scale(2);
+	-webkit-transform: scale(2);
 }
 
 .box-item .desc {
