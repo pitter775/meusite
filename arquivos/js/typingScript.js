@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', init);
 function init() {
 const txtElement = document.querySelector('.txt-type');
 // const words = JSON.parse(txtElement.getAttribute('data-words'));
-const words = ['um Freelancer ?','um Programador ?', 'ou Fullstack ?','Site ?', 'Sistema ?', 'algo em PHP ?', 'Laravel ?', 'MySQL ?', 'Vuejs ?', 'Javascript ?'];
+const words = ['Programador', 'Fullstack','Site', 'Sistema', 'PHP ?', 'Laravel', 'MySQL', 'Vuejs', 'Javascript'];
 
 
 // const wait = txtElement.getAttribute('data-wait');
